@@ -5,8 +5,8 @@ on: [pull_request, workflow_dispatch, push]
 env:
   API_HOST: ap-southeast-a.apiconnect.automation.ibm.com
   PROVIDER_ORG: techsales
-  API_FILES: APIfolder/photos.yaml
-  #API_FILES: APIfolder/uber-api.json
+  # API_FILES: APIfolder/photos.yaml
+  API_FILES: APIfolder/uber-api.json
   #API_FILES: APIfolder/coffee-store.yaml
   #API_FOLDERS: APIfolder,APIfolderTwo
 
