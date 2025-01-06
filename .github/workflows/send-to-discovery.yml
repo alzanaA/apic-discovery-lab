@@ -3,10 +3,8 @@ name: Send Discovered API to ApiConnect
 on: [pull_request, workflow_dispatch, push]
 
 env:
-  API_HOST: apps.676e68b6e01122b7188116ca.ocp.techzone.ibm.com
-  PLATFORM_API_PREFIX: apim-demo-mgmt-platform-api-tools
-  INSECURE_SKIP_TLS_VERIFY: True
-  PROVIDER_ORG: ibm-indonesia
+  API_HOST: ap-southeast-a.apiconnect.automation.ibm.com
+  PROVIDER_ORG: techsales
   API_FILES: APIfolder/photos.yaml
   #API_FILES: APIfolder/uber-api.json
   #API_FILES: APIfolder/coffee-store.yaml
@@ -26,7 +24,6 @@ jobs:
       with:
         api_host: ${{ env.API_HOST }}
         platform_api_prefix: ${{ env.PLATFORM_API_PREFIX }}
-        insecure_skip_tls_verify: ${{ env.INSECURE_SKIP_TLS_VERIFY }}
         provider_org: ${{ env.PROVIDER_ORG }}
         api_key: ${{ secrets.apicApikey }}
         api_files: ${{ env.API_FILES }}
