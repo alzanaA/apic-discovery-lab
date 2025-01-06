@@ -3,8 +3,8 @@ name: Send Discovered API to ApiConnect
 on: [pull_request, workflow_dispatch, push]
 
 env:
-  API_HOST: us-east-a.apiconnect.automation.ibm.com
-  PROVIDER_ORG: api-connect-fo-0
+  API_HOST: apim-demo-mgmt-api-manager-tools.apps.676e68b6e01122b7188116ca.ocp.techzone.ibm.com
+  PROVIDER_ORG: ibm-indonesia
   API_FILES: APIfolder/photos.yaml
   #API_FILES: APIfolder/uber-api.json
   #API_FILES: APIfolder/coffee-store.yaml
@@ -25,7 +25,7 @@ jobs:
         api_host: ${{ env.API_HOST }}
         platform_api_prefix: ${{ env.PLATFORM_API_PREFIX }}
         provider_org: ${{ env.PROVIDER_ORG }}
-        api_key: ${{ secrets.apicApikey_participant_12 }}
+        api_key: ${{ secrets.apicApikey }}
         api_files: ${{ env.API_FILES }}
         api_folders: ${{ env.API_FOLDERS }}
         resync_check: ${{ true }}
