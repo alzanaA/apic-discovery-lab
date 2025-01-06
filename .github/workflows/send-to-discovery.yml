@@ -5,7 +5,7 @@ on: [pull_request, workflow_dispatch, push]
 env:
   API_HOST: apps.676e68b6e01122b7188116ca.ocp.techzone.ibm.com
   PLATFORM_API_PREFIX: apim-demo-mgmt-platform-api-tools
-  INSECURE_SKIP_TLS_VERIFY: true
+  INSECURE_SKIP_TLS_VERIFY: True
   PROVIDER_ORG: ibm-indonesia
   API_FILES: APIfolder/photos.yaml
   #API_FILES: APIfolder/uber-api.json
